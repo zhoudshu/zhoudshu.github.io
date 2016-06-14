@@ -2,7 +2,7 @@
 <html lang="zh-cn"
 >
 <head>
-    <title>blog - Zhoudshu's Blog</title>
+    <title>Howto Stop Bind writing log to system messages - Zhoudshu's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,16 +11,12 @@
 
     <link href="https://zhouds.cn/images/favicon.png" rel="icon">
 
+<link rel="canonical" href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">
 
-    <meta name="author" content="Zhoudshu" />
-    <meta name="keywords" content="blog" />
+        <meta name="author" content="zhoudshu" />
+        <meta name="keywords" content="Bind,DNS,Logging,syslogd,messages" />
+        <meta name="description" content="Bind is open source software that implements the Domain Name System (DNS) protocols for the Internet, Many Companies have used it. This article discusses the logging function of Bind. by default configuration, Bind writes logging to Linux system messages in /var/log/messages directory like: Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/A&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 octets Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/AAAA&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 ..." />
 
-    <!-- Open Graph tags -->
-        <meta property="og:site_name" content="Zhoudshu's Blog" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Zhoudshu's Blog"/>
-        <meta property="og:url" content="https://zhouds.cn"/>
-        <meta property="og:description" content="Zhoudshu's Blog"/>
 
 
     <!-- Bootstrap -->
@@ -74,45 +70,10 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <article>
-                <h2><a href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/">Howto Run SSL splitting and Caching Web proxies Demo</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-06-13T22:15:00+08:00"> Mon 13 June 2016</time>
-    </span>
-
-        <span class="label label-default">Category</span>
-        <a href="https://zhouds.cn/category/blog.html">blog</a>
-
-
-<span class="label label-default">Tags</span>
-	<a href="https://zhouds.cn/tags/ssl.html">SSL</a>
-        /
-	<a href="https://zhouds.cn/tags/cache.html">Cache</a>
-        /
-	<a href="https://zhouds.cn/tags/proxy.html">Proxy</a>
-        /
-	<a href="https://zhouds.cn/tags/barnraising.html">Barnraising</a>
-        /
-	<a href="https://zhouds.cn/tags/broker.html">Broker</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><h1 id="barnraising">barnraising</h1>
-<p>This Project is provided by Chris Lesniewski-Laas and M. Frans Kaashoek for reducing the bandwidth load on Web servers. the thesis is public and Demo Program is open source code. We can access <a href="https://pdos.csail.mit.edu/papers/ssl-splitting-usenixsecurity03/"><strong>thesis</strong></a> and download the <a href="https://pdos.lcs.mit.edu/archive/barnraising/"><strong>Demo</strong></a></p>
-<p>But both thesis and demo have not specific installed document. I had met a lot of problems, sometimes I had to modify the source code. After 3 weeks later, I finally install and run successfully. I wrote the process of installing to this file, and this git reposity is my modified and successful barnraising version.</p>
-<h2 id="the-demo-component">the demo component</h2>
-<ul>
-<li>Cache Proxy</li>
-<li>broker ...</li></ul>
-<p><small><a href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/#disqus_thread" data-disqus-identifier="Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">Howto Stop Bind writing log to system messages</a></h2>
-                    <div class="well well-sm">
+    <section id="content">
+        <article>
+            <div class="well well-sm">
+              <!-- <div class="panel-heading"> -->
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
@@ -134,14 +95,109 @@
         /
 	<a href="https://zhouds.cn/tags/messages.html">messages</a>
     
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="https://www.isc.org/downloads/bind/"><strong>Bind</strong></a> is open source software that implements the Domain Name System (DNS) protocols for the Internet, Many Companies have used it. This article discusses the logging function of Bind. by default configuration, Bind writes logging to Linux system messages in /var/log/messages directory like:</p>
+</footer><!-- /.post-info -->              <!-- </div> -->
+            </div>
+            <h1 class="entry-title">
+                <a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/"
+                rel="bookmark"
+                title="Permalink to Howto Stop Bind writing log to system messages">
+                    Howto Stop Bind writing log to system messages
+                </a>
+            </h1>
+
+            <div class="entry-content">
+                <p><a href="https://www.isc.org/downloads/bind/"><strong>Bind</strong></a> is open source software that implements the Domain Name System (DNS) protocols for the Internet, Many Companies have used it. This article discusses the logging function of Bind. by default configuration, Bind writes logging to Linux system messages in /var/log/messages directory like:</p>
 <div class="highlight"><pre><span></span> Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/A&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 octets
- Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/AAAA&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 ...</pre></div>
-<p><small><a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/#disqus_thread" data-disqus-identifier="Howto-Stop-Bind-writing-system-log-to-messages">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">more ...</a>
-                </div>
-            </article>
-            <hr/>
+ Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/AAAA&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 octets
+ Jun 13 10:10:10 Test_Host named[19304]: success resolving &#39;ns3.servodns.com/AAAA&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 octets
+ Jun 13 10:10:10 Test_Host named[19304]: error (network unreachable) resolving &#39;www.research-results.de/A/IN&#39;: 2001:8d8:fe:53:0:d9a0:5090:100#53
+ Jun 13 10:10:10 Test_Host named[19304]: adb: grow_names to 2039 starting
+ Jun 13 10:10:10 Test_Host named[19304]: adb: grow_names finished
+</pre></div>
+
+
+<p>Sometimes, This default logging affectes the performance of bind, So We must find one method to close the logging. I looked at the document of bind, we can close it by configuring the following lines in named.conf</p>
+<div class="highlight"><pre><span></span>  category default { null; };
+</pre></div>
+
+
+<p>the whole logging configuration is follow:</p>
+<div class="highlight"><pre><span></span>  logging {
+       category default { null; };
+
+       channel &quot;general&quot; {
+        file &quot;log/general.log&quot; versions 10 size 2000m;
+        severity info;
+        print-time      yes;
+        print-category  yes;
+        print-severity  yes;
+       };
+
+       category general {
+        general;
+       };
+
+       channel &quot;client&quot; {
+        file &quot;log/client.log&quot; versions 10 size 2000m;
+        severity info;
+        print-time      yes;
+        print-category  yes;
+        print-severity  yes;
+       };
+
+       category client{
+        client;
+       };
+
+       channel &quot;queries&quot; {
+        file &quot;log/queries.log&quot; versions 10 size 2000m;
+        severity info;
+        print-time      yes;
+        print-category  yes;
+        print-severity  yes;
+       };
+
+       category queries {
+        queries;
+       };
+
+    };
+</pre></div>
+            </div>
+            <!-- /.entry-content -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'zhouds'; // required: replace example with your forum shortname
+
+                    var disqus_identifier = 'Howto-Stop-Bind-writing-system-log-to-messages';
+                var disqus_url = 'https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/';
+
+            var disqus_config = function () {
+                this.language = "zh-cn";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -169,6 +225,11 @@
                     <li class="list-group-item">
                         <a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">
                             Howto Stop Bind writing log to system messages
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://zhouds.cn/how-to/how-i-built-this-blog/">
+                            How I built this Blog using Pelican
                         </a>
                     </li>
                 </ul>

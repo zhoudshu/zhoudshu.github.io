@@ -2,7 +2,7 @@
 <html lang="zh-cn"
 >
 <head>
-    <title>blog - Zhoudshu's Blog</title>
+    <title>Howto Run SSL splitting and Caching Web proxies Demo - Zhoudshu's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,16 +11,12 @@
 
     <link href="https://zhouds.cn/images/favicon.png" rel="icon">
 
+<link rel="canonical" href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/">
 
-    <meta name="author" content="Zhoudshu" />
-    <meta name="keywords" content="blog" />
+        <meta name="author" content="zhoudshu" />
+        <meta name="keywords" content="SSL,Cache,Proxy,Barnraising,Broker" />
+        <meta name="description" content="barnraising This Project is provided by Chris Lesniewski-Laas and M. Frans Kaashoek for reducing the bandwidth load on Web servers. the thesis is public and Demo Program is open source code. We can access thesis and download the Demo But both thesis and demo have not specific installed document. I had met a lot of problems, sometimes I had to modify the source code. After 3 weeks later, I finally install and run successfully. I wrote the process of installing to this file, and this git reposity is my modified and successful barnraising version. the demo component Cache Proxy broker ..." />
 
-    <!-- Open Graph tags -->
-        <meta property="og:site_name" content="Zhoudshu's Blog" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Zhoudshu's Blog"/>
-        <meta property="og:url" content="https://zhouds.cn"/>
-        <meta property="og:description" content="Zhoudshu's Blog"/>
 
 
     <!-- Bootstrap -->
@@ -74,9 +70,10 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <article>
-                <h2><a href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/">Howto Run SSL splitting and Caching Web proxies Demo</a></h2>
-                    <div class="well well-sm">
+    <section id="content">
+        <article>
+            <div class="well well-sm">
+              <!-- <div class="panel-heading"> -->
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
@@ -98,50 +95,135 @@
         /
 	<a href="https://zhouds.cn/tags/broker.html">Broker</a>
     
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><h1 id="barnraising">barnraising</h1>
+</footer><!-- /.post-info -->              <!-- </div> -->
+            </div>
+            <h1 class="entry-title">
+                <a href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/"
+                rel="bookmark"
+                title="Permalink to Howto Run SSL splitting and Caching Web proxies Demo">
+                    Howto Run SSL splitting and Caching Web proxies Demo
+                </a>
+            </h1>
+
+            <div class="entry-content">
+                <h1 id="barnraising">barnraising</h1>
 <p>This Project is provided by Chris Lesniewski-Laas and M. Frans Kaashoek for reducing the bandwidth load on Web servers. the thesis is public and Demo Program is open source code. We can access <a href="https://pdos.csail.mit.edu/papers/ssl-splitting-usenixsecurity03/"><strong>thesis</strong></a> and download the <a href="https://pdos.lcs.mit.edu/archive/barnraising/"><strong>Demo</strong></a></p>
 <p>But both thesis and demo have not specific installed document. I had met a lot of problems, sometimes I had to modify the source code. After 3 weeks later, I finally install and run successfully. I wrote the process of installing to this file, and this git reposity is my modified and successful barnraising version.</p>
 <h2 id="the-demo-component">the demo component</h2>
 <ul>
 <li>Cache Proxy</li>
-<li>broker ...</li></ul>
-<p><small><a href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/#disqus_thread" data-disqus-identifier="Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">Howto Stop Bind writing log to system messages</a></h2>
-                    <div class="well well-sm">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-06-13T20:15:00+08:00"> Mon 13 June 2016</time>
-    </span>
+<li>broker.pl: simple managed daemon</li>
+<li>minion.pl: forward the user https request to webSite, get url content request from expander daemon and save content to local disk</li>
+<li>Mysql database: record dns zone information</li>
+<li>WebSite</li>
+<li>expander.pl: response minion request for url content request </li>
+<li>apache_1.3.23: the standard httpd program</li>
+<li>OpenSSL0.9.6g: code at openssl directory in barnraising. In https handshake phase, It save url content to local disk </li>
+<li>domain and https certificate: I use my domain zhouds.cn to test</li>
+</ul>
+<h2 id="the-installed-environment">the installed environment</h2>
+<ul>
+<li>Two physical Devices or VMs</li>
+<li>Cache Proxy: Linux OS is Centos5.8 + Kernel 2.6.18-308.el5 + Perl5.8.8 + Mysql </li>
+<li>WebSite:     Linux OS is RHLr 8.0 + Kernel 2.4.18-14 + Perl5.8.0 + OpenSSL0.9.6 + Apache1.3.22</li>
+</ul>
+<h2 id="install-steps-for-cache-proxy">Install Steps for Cache Proxy</h2>
+<h3 id="step-1-mysql-database">Step 1: Mysql Database</h3>
+<div class="highlight"><pre><span></span><span class="c1"># yum install mysql-server.x86_64 mysql-devel</span>
+<span class="c1"># service mysqld start</span>
+<span class="c1"># mysql -uroot -p </span>
+</pre></div>
 
-        <span class="label label-default">Category</span>
-        <a href="https://zhouds.cn/category/blog.html">blog</a>
+
+<h3 id="step-2-clone-barnraising-project">Step 2: clone barnraising project</h3>
+<div class="highlight"><pre><span></span><span class="c1"># git clone https://github.com/zhoudshu/barnraising.git</span>
+<span class="c1"># source barnraising/mydns.sql (at mysql command line)</span>
+<span class="c1"># cpan install:</span>
+  Error
+  Pod::Usage
+  DBI
+  DBD::mysql
+  Digest::MD5
+  Digest::SHA1
+  Crypt::RC4
+  Crypt::DES
+  Crypt::DES_EDE3
+  Crypt::CBC  <span class="o">(</span> whose tests depend on Crypt::Rijndael <span class="o">)</span>
+  Inline
+  Inline::C
+</pre></div>
 
 
-<span class="label label-default">Tags</span>
-	<a href="https://zhouds.cn/tags/bind.html">Bind</a>
-        /
-	<a href="https://zhouds.cn/tags/dns.html">DNS</a>
-        /
-	<a href="https://zhouds.cn/tags/logging.html">Logging</a>
-        /
-	<a href="https://zhouds.cn/tags/syslogd.html">syslogd</a>
-        /
-	<a href="https://zhouds.cn/tags/messages.html">messages</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p><a href="https://www.isc.org/downloads/bind/"><strong>Bind</strong></a> is open source software that implements the Domain Name System (DNS) protocols for the Internet, Many Companies have used it. This article discusses the logging function of Bind. by default configuration, Bind writes logging to Linux system messages in /var/log/messages directory like:</p>
-<div class="highlight"><pre><span></span> Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/A&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 octets
- Jun 13 10:10:09 Test_Host named[19304]: success resolving &#39;ns4.servodns.com/AAAA&#39; (in &#39;servodns.com&#39;?) after reducing the advertised EDNS UDP packet size to 512 ...</pre></div>
-<p><small><a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/#disqus_thread" data-disqus-identifier="Howto-Stop-Bind-writing-system-log-to-messages">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">more ...</a>
-                </div>
-            </article>
-            <hr/>
+<h3 id="step-3-run-perl-script">Step 3: run perl script</h3>
+<div class="highlight"><pre><span></span><span class="c1"># perl broker.pl </span>
+<span class="c1"># perl minion.pl https://zhouds.cn/manual/images/apache_pb.gif Cache ImpTLS (at another termination)</span>
+<span class="c1"># </span>
+</pre></div>
+
+
+<h2 id="install-steps-for-website">Install Steps for Website</h2>
+<h3 id="step-1-cpan-errorpm">Step 1: cpan Error.pm</h3>
+<div class="highlight"><pre><span></span><span class="c1"># cpan install Error</span>
+</pre></div>
+
+
+<h3 id="step-2-compile-apache-with-openssl096g">Step 2: compile apache with OpenSSL0.9.6g</h3>
+<p>refer the article <a href="http://www.kozubik.com/docs/apache_ssl.txt"><strong>apache_ssl</strong></a></p>
+<div class="highlight"><pre><span></span><span class="c1"># download apache_1.3.22 and mod_ssl-2.8.7-1.3.23</span>
+<span class="c1">#./configure --with-ssl=../barnraising/openssl --with-apache=../apache_1.3.22 --prefix=/usr/local/apache-split</span>
+<span class="c1"># make </span>
+<span class="c1"># make install</span>
+<span class="c1"># cp ../barnraising/httpd.conf /usr/local/apache-split/conf/</span>
+<span class="c1"># /usr/local/apache-split/bin/apachectl startssl</span>
+</pre></div>
+
+
+<h3 id="step-3-run-perl-script_1">Step 3: run perl script</h3>
+<div class="highlight"><pre><span></span><span class="c1"># perl expander.pl </span>
+<span class="c1"># </span>
+</pre></div>
+
+
+<h2 id="run-and-good-luck">Run and good luck</h2>
+<ul>
+<li>configure A record of zhouds.cn to my Cache Proxy host</li>
+<li>https://zhouds.cn/index.html in chome or ie10+</li>
+</ul>
+            </div>
+            <!-- /.entry-content -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'zhouds'; // required: replace example with your forum shortname
+
+                    var disqus_identifier = 'Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo';
+                var disqus_url = 'https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/';
+
+            var disqus_config = function () {
+                this.language = "zh-cn";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -169,6 +251,11 @@
                     <li class="list-group-item">
                         <a href="https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/">
                             Howto Stop Bind writing log to system messages
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://zhouds.cn/how-to/how-i-built-this-blog/">
+                            How I built this Blog using Pelican
                         </a>
                     </li>
                 </ul>
