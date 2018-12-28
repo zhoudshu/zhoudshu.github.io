@@ -2,7 +2,7 @@
 <html lang="zh-cn"
 >
 <head>
-    <title>python - Zhoudshu's Blog</title>
+    <title>Centos - Zhoudshu's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
 
 
     <meta name="author" content="Zhoudshu" />
-    <meta name="keywords" content="python" />
+    <meta name="keywords" content="Centos" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Zhoudshu's Blog" />
@@ -73,34 +73,117 @@
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/">How I built this Blog using Pelican</a></h2>
+                <h2><a href="http://zhoudshu.github.io/blog/Some-tips-for-configing-the-flume-prpperties/">Some tips for configing the flume properties</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-05-19T11:15:00+08:00"> Thu 19 May 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-05-25T21:15:00+08:00"> Thu 25 May 2017</time>
     </span>
 
         <span class="label label-default">Category</span>
-        <a href="http://zhoudshu.github.io/category/how-to.html">How-to</a>
+        <a href="http://zhoudshu.github.io/category/blog.html">Blog</a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://zhoudshu.github.io/tags/how-to.html">how-to</a>
+	<a href="http://zhoudshu.github.io/tags/flume.html">Flume</a>
         /
-	<a href="http://zhoudshu.github.io/tags/python.html">python</a>
+	<a href="http://zhoudshu.github.io/tags/cdh.html">CDH</a>
         /
-	<a href="http://zhoudshu.github.io/tags/pelican.html">pelican</a>
-        /
-	<a href="http://zhoudshu.github.io/tags/blog.html">blog</a>
-        /
-	<a href="http://zhoudshu.github.io/tags/website.html">website</a>
+	<a href="http://zhoudshu.github.io/tags/centos.html">Centos</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>I have wanted to run a personal blog for a long time. Because I am family with Python, thus, I am prior to choose python blog framework. At first I chosed the <a href="http://mezzanine.jupo.org"><strong>mezzanine</strong></a> which is best Django CMS. I installed this system and had used it for several weeks. I find that this system is not easy to be installed, managed, maintained, migrated, furthemore, it is slowly accessed for saving data to database.</p>
-<p>Finally I finded the static blog technology by <a href="https://www.staticgen.com">staicgen WebSite</a>. I choose the Python Language system Pelican which is the best Python tool for static blog</p>
-<h2 id="what-is-pelican">What ...</h2>
-<p><small><a href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/#disqus_thread" data-disqus-identifier="how-i-built-this-blog">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/">more ...</a>
+                <div class="summary"><h1 id="the-tips">The Tips</h1>
+<p><a href="http://flume.apache.org/"><strong>Flume</strong></a> is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data.I already have installed many flume systems to collect streaming log data. But I found some problems when we used flume. I write this blog to record the problems and solutions. and anybody else will avoid such problem.</p>
+<h2 id="the-running-environment">The running environment</h2>
+<ul>
+<li>CDH version 5.8.0+</li>
+<li>Flume 1.6.0+</li>
+<li>Java 1.7.0+</li>
+<li>Linux 2.6.32-573.el6.x86_6</li>
+<li>Centos 6.6+</li>
+</ul>
+<h2 id="tips-one-rotating-invalid">Tips one :rotating invalid</h2>
+<p>flume by using the following configuration uploads and rotates files to hadoop ...</p>
+<p><small><a href="http://zhoudshu.github.io/blog/Some-tips-for-configing-the-flume-prpperties/#disqus_thread" data-disqus-identifier="Some-tips-for-configing-the-flume-prpperties">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="http://zhoudshu.github.io/blog/Some-tips-for-configing-the-flume-prpperties/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://zhoudshu.github.io/blog/Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage/">Why does linux du command print no result and occupy one 100 CPU usage</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-05-24T21:15:00+08:00"> Wed 24 May 2017</time>
+    </span>
+
+        <span class="label label-default">Category</span>
+        <a href="http://zhoudshu.github.io/category/blog.html">Blog</a>
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://zhoudshu.github.io/tags/du.html">du</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/mtab.html">mtab</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/bind.html">bind</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/linux.html">Linux</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/centos.html">Centos</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><h2 id="the-problem">The Problem</h2>
+<p>Today, My colleague found an abnormal problem and asked me the reason. I recorded the following analysis steps. </p>
+<p>This problem is that linux du command does not print the results, and at the same time, the process of du command occupies 100% CPU usage. Result of top command is the following:</p>
+<div class="highlight"><pre><span></span><span class="c1"># top</span>
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                                                    
+<span class="m">36343</span> root      <span class="m">20</span>   <span class="m">0</span>  110m  13m <span class="m">1780</span> R 99.8  0.0   1:37.66 du                                                                                                         
+<span class="m">36370</span> root      <span class="m">20</span>   <span class="m">0</span>  110m  13m <span class="m">1780</span> R 94.2  0.0   1:20.98 du
+   <span class="m">86</span> root ...</pre></div>
+<p><small><a href="http://zhoudshu.github.io/blog/Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage/#disqus_thread" data-disqus-identifier="Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="http://zhoudshu.github.io/blog/Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://zhoudshu.github.io/blog/How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x/">How to limit virtual memory using of Flume process in Centos 6.x</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-04-06T21:15:00+08:00"> Thu 06 April 2017</time>
+    </span>
+
+        <span class="label label-default">Category</span>
+        <a href="http://zhoudshu.github.io/category/blog.html">Blog</a>
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://zhoudshu.github.io/tags/flume.html">Flume</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/cdh.html">CDH</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/virtual.html">virtual</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/memory.html">Memory</a>
+        /
+	<a href="http://zhoudshu.github.io/tags/centos.html">Centos</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><h1 id="the-problem">The Problem</h1>
+<p><a href="http://flume.apache.org/"><strong>Flume</strong></a> is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data.I already have installed many flume systems to collect streaming log data. But I found one problem that flume process was occuping more virtual memories and fewer physical memories. Why is this situation occurred? This blog explains and provides the methods to solve this problem. </p>
+<h2 id="the-running-environment">The running environment</h2>
+<ul>
+<li>CDH version 5.8.0+</li>
+<li>Flume 1.6.0+</li>
+<li>Java 1.7.0+</li>
+<li>Linux 2.6.32-573.el6.x86_6</li>
+<li>Centos 6.6+</li>
+</ul>
+<h2 id="the-top-command-result-of-flume-process">The Top command Result of flume process</h2>
+<div class="highlight"><pre><span></span><span class="m">26963</span> root ...</pre></div>
+<p><small><a href="http://zhoudshu.github.io/blog/How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x/#disqus_thread" data-disqus-identifier="How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="http://zhoudshu.github.io/blog/How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x/">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -123,8 +206,18 @@
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/">
-                            How I built this Blog using Pelican
+                        <a href="http://zhoudshu.github.io/blog/Some-tips-for-configing-the-flume-prpperties/">
+                            Some tips for configing the flume properties
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://zhoudshu.github.io/blog/Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage/">
+                            Why does linux du command print no result and occupy one 100 CPU usage
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://zhoudshu.github.io/blog/How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x/">
+                            How to limit virtual memory using of Flume process in Centos 6.x
                         </a>
                     </li>
                 </ul>
@@ -251,7 +344,7 @@
            </div>
       </div>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 Zhoudshu
+         <div class="col-xs-10">&copy; 2017 Zhoudshu
             &middot; Powered by <a href="http://python.org/" target="_blank">Python</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             a customized <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,

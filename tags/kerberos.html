@@ -2,7 +2,7 @@
 <html lang="zh-cn"
 >
 <head>
-    <title>python - Zhoudshu's Blog</title>
+    <title>kerberos - Zhoudshu's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
 
 
     <meta name="author" content="Zhoudshu" />
-    <meta name="keywords" content="python" />
+    <meta name="keywords" content="kerberos" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Zhoudshu's Blog" />
@@ -73,34 +73,39 @@
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/">How I built this Blog using Pelican</a></h2>
+                <h2><a href="http://zhoudshu.github.io/blog/How-to-config-and-impala-sql-interface-with-kerberos/">How to config and query Impala SQL interface of CDH with kerberos mechanism</a></h2>
                     <div class="well well-sm">
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-05-19T11:15:00+08:00"> Thu 19 May 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-02-23T21:55:00+08:00"> Thu 23 February 2017</time>
     </span>
 
         <span class="label label-default">Category</span>
-        <a href="http://zhoudshu.github.io/category/how-to.html">How-to</a>
+        <a href="http://zhoudshu.github.io/category/blog.html">Blog</a>
 
 
 <span class="label label-default">Tags</span>
-	<a href="http://zhoudshu.github.io/tags/how-to.html">how-to</a>
+	<a href="http://zhoudshu.github.io/tags/impala.html">Impala</a>
         /
-	<a href="http://zhoudshu.github.io/tags/python.html">python</a>
+	<a href="http://zhoudshu.github.io/tags/cdh.html">CDH</a>
         /
-	<a href="http://zhoudshu.github.io/tags/pelican.html">pelican</a>
+	<a href="http://zhoudshu.github.io/tags/kerberos.html">kerberos</a>
         /
-	<a href="http://zhoudshu.github.io/tags/blog.html">blog</a>
+	<a href="http://zhoudshu.github.io/tags/sql.html">SQL</a>
         /
-	<a href="http://zhoudshu.github.io/tags/website.html">website</a>
+	<a href="http://zhoudshu.github.io/tags/ldap.html">ldap</a>
     
 </footer><!-- /.post-info -->                    </div>
-                <div class="summary"><p>I have wanted to run a personal blog for a long time. Because I am family with Python, thus, I am prior to choose python blog framework. At first I chosed the <a href="http://mezzanine.jupo.org"><strong>mezzanine</strong></a> which is best Django CMS. I installed this system and had used it for several weeks. I find that this system is not easy to be installed, managed, maintained, migrated, furthemore, it is slowly accessed for saving data to database.</p>
-<p>Finally I finded the static blog technology by <a href="https://www.staticgen.com">staicgen WebSite</a>. I choose the Python Language system Pelican which is the best Python tool for static blog</p>
-<h2 id="what-is-pelican">What ...</h2>
-<p><small><a href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/#disqus_thread" data-disqus-identifier="how-i-built-this-blog">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/">more ...</a>
+                <div class="summary"><h1 id="the-problem">The Problem</h1>
+<p>Recently, I have spended several days on rearching impala sql interface with security mechanism. There are two methods to query impala data. One is the kerberos mechanism, the other is ldap method which provided user and password. The first one is very difficult and usually adapted for internal using in the hadoop cluster, So I choose the ldap method for external appliction such as jdbc interface. This blog provides the configuration steps and queries demo for using ldap to impala databases. </p>
+<h2 id="the-test-environment">The test environment</h2>
+<ul>
+<li>CDH version 5.8.0+</li>
+<li>kerberos software</li>
+<li>ldap service</li>
+<li>Linux 2.6.32-573.el6 ...</li></ul>
+<p><small><a href="http://zhoudshu.github.io/blog/How-to-config-and-impala-sql-interface-with-kerberos/#disqus_thread" data-disqus-identifier="How-to-config-and-impala-sql-interface-with-kerberos">View comments</a>.</small></p>                    <a class="btn btn-default btn-xs" href="http://zhoudshu.github.io/blog/How-to-config-and-impala-sql-interface-with-kerberos/">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -123,8 +128,8 @@
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="http://zhoudshu.github.io/how-to/how-i-built-this-blog/">
-                            How I built this Blog using Pelican
+                        <a href="http://zhoudshu.github.io/blog/How-to-config-and-impala-sql-interface-with-kerberos/">
+                            How to config and query Impala SQL interface of CDH with kerberos mechanism
                         </a>
                     </li>
                 </ul>
@@ -251,7 +256,7 @@
            </div>
       </div>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 Zhoudshu
+         <div class="col-xs-10">&copy; 2017 Zhoudshu
             &middot; Powered by <a href="http://python.org/" target="_blank">Python</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             a customized <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,

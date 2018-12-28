@@ -4,392 +4,392 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://zhouds.cn/</loc>
-<lastmod>2018-01-11T00:45:55-00:00</lastmod>
+<loc>http://zhoudshu.github.io/</loc>
+<lastmod>2018-12-28T19:01:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/archives.html</loc>
-<lastmod>2018-01-11T00:45:55-00:00</lastmod>
+<loc>http://zhoudshu.github.io/archives.html</loc>
+<lastmod>2018-12-28T19:01:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags.html</loc>
-<lastmod>2018-01-11T00:45:55-00:00</lastmod>
+<loc>http://zhoudshu.github.io/tags.html</loc>
+<lastmod>2018-12-28T19:01:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/categories.html</loc>
-<lastmod>2018-01-11T00:45:55-00:00</lastmod>
+<loc>http://zhoudshu.github.io/categories.html</loc>
+<lastmod>2018-12-28T19:01:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/about.html</loc>
+<loc>http://zhoudshu.github.io/about.html</loc>
 <lastmod>2016-05-20T19:53:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.3</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/I-had-successed-to-finish-the-machine=learning-lessons=at=july-19/</loc>
+<loc>http://zhoudshu.github.io/blog/I-had-successed-to-finish-the-machine=learning-lessons=at=july-19/</loc>
 <lastmod>2017-06-19T21:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/Some-tips-for-configing-the-flume-prpperties/</loc>
+<loc>http://zhoudshu.github.io/blog/Some-tips-for-configing-the-flume-prpperties/</loc>
 <lastmod>2017-05-25T21:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage/</loc>
+<loc>http://zhoudshu.github.io/blog/Why-does-linux-du-command-print-no-result-and-occupy-one-100-CPU-usage/</loc>
 <lastmod>2017-05-24T21:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/How-to-upgrade-the-tomcat-version-used-by-CDH-httpFs-service/</loc>
+<loc>http://zhoudshu.github.io/blog/How-to-upgrade-the-tomcat-version-used-by-CDH-httpFs-service/</loc>
 <lastmod>2017-04-06T21:45:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x/</loc>
+<loc>http://zhoudshu.github.io/blog/How-to-limit-virtual-memory-using-of-Flume-process-in-CentOs-6.x/</loc>
 <lastmod>2017-04-06T21:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/How-to-config-and-impala-sql-interface-with-kerberos/</loc>
+<loc>http://zhoudshu.github.io/blog/How-to-config-and-impala-sql-interface-with-kerberos/</loc>
 <lastmod>2017-02-23T21:55:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/Flume-must-be-used-the-hadoop-native-libraries/</loc>
+<loc>http://zhoudshu.github.io/blog/Flume-must-be-used-the-hadoop-native-libraries/</loc>
 <lastmod>2016-12-27T18:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/</loc>
+<loc>http://zhoudshu.github.io/blog/Howto-Run-SSL-splitting-and-Caching-Web-proxies-Demo/</loc>
 <lastmod>2016-06-13T22:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/blog/Howto-Stop-Bind-writing-system-log-to-messages/</loc>
+<loc>http://zhoudshu.github.io/blog/Howto-Stop-Bind-writing-system-log-to-messages/</loc>
 <lastmod>2016-06-13T20:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/how-to/how-i-built-this-blog/</loc>
+<loc>http://zhoudshu.github.io/how-to/how-i-built-this-blog/</loc>
 <lastmod>2016-05-19T11:15:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/category/blog.html</loc>
+<loc>http://zhoudshu.github.io/category/blog.html</loc>
 <lastmod>2017-06-19T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/category/how-to.html</loc>
+<loc>http://zhoudshu.github.io/category/how-to.html</loc>
 <lastmod>2016-05-19T11:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/pelican.html</loc>
+<loc>http://zhoudshu.github.io/tags/pelican.html</loc>
 <lastmod>2016-05-19T11:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/centos.html</loc>
+<loc>http://zhoudshu.github.io/tags/centos.html</loc>
 <lastmod>2017-05-25T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/httpfs.html</loc>
+<loc>http://zhoudshu.github.io/tags/httpfs.html</loc>
 <lastmod>2017-04-06T21:45:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/cdh.html</loc>
+<loc>http://zhoudshu.github.io/tags/cdh.html</loc>
 <lastmod>2017-05-25T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/mtab.html</loc>
+<loc>http://zhoudshu.github.io/tags/mtab.html</loc>
 <lastmod>2017-05-24T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/video.html</loc>
+<loc>http://zhoudshu.github.io/tags/video.html</loc>
 <lastmod>2017-06-19T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/linux.html</loc>
+<loc>http://zhoudshu.github.io/tags/linux.html</loc>
 <lastmod>2017-05-24T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/ldap.html</loc>
+<loc>http://zhoudshu.github.io/tags/ldap.html</loc>
 <lastmod>2017-02-23T21:55:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/native.html</loc>
+<loc>http://zhoudshu.github.io/tags/native.html</loc>
 <lastmod>2016-12-27T18:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/machinelearning.html</loc>
+<loc>http://zhoudshu.github.io/tags/machinelearning.html</loc>
 <lastmod>2017-06-19T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/cache.html</loc>
+<loc>http://zhoudshu.github.io/tags/cache.html</loc>
 <lastmod>2016-06-13T22:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/hadoop.html</loc>
+<loc>http://zhoudshu.github.io/tags/hadoop.html</loc>
 <lastmod>2016-12-27T18:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/virtual.html</loc>
+<loc>http://zhoudshu.github.io/tags/virtual.html</loc>
 <lastmod>2017-04-06T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/blog.html</loc>
+<loc>http://zhoudshu.github.io/tags/blog.html</loc>
 <lastmod>2016-05-19T11:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/dns.html</loc>
+<loc>http://zhoudshu.github.io/tags/dns.html</loc>
 <lastmod>2016-06-13T20:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/memory.html</loc>
+<loc>http://zhoudshu.github.io/tags/memory.html</loc>
 <lastmod>2017-04-06T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/how-to.html</loc>
+<loc>http://zhoudshu.github.io/tags/how-to.html</loc>
 <lastmod>2016-05-19T11:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/flume.html</loc>
+<loc>http://zhoudshu.github.io/tags/flume.html</loc>
 <lastmod>2017-05-25T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/andrewng.html</loc>
+<loc>http://zhoudshu.github.io/tags/andrewng.html</loc>
 <lastmod>2017-06-19T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/python.html</loc>
+<loc>http://zhoudshu.github.io/tags/python.html</loc>
 <lastmod>2016-05-19T11:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/kerberos.html</loc>
+<loc>http://zhoudshu.github.io/tags/kerberos.html</loc>
 <lastmod>2017-02-23T21:55:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/compress.html</loc>
+<loc>http://zhoudshu.github.io/tags/compress.html</loc>
 <lastmod>2016-12-27T18:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/broker.html</loc>
+<loc>http://zhoudshu.github.io/tags/broker.html</loc>
 <lastmod>2016-06-13T22:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/ssl.html</loc>
+<loc>http://zhoudshu.github.io/tags/ssl.html</loc>
 <lastmod>2016-06-13T22:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/proxy.html</loc>
+<loc>http://zhoudshu.github.io/tags/proxy.html</loc>
 <lastmod>2016-06-13T22:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/sql.html</loc>
+<loc>http://zhoudshu.github.io/tags/sql.html</loc>
 <lastmod>2017-02-23T21:55:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/du.html</loc>
+<loc>http://zhoudshu.github.io/tags/du.html</loc>
 <lastmod>2017-05-24T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/bug.html</loc>
+<loc>http://zhoudshu.github.io/tags/bug.html</loc>
 <lastmod>2017-04-06T21:45:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/logging.html</loc>
+<loc>http://zhoudshu.github.io/tags/logging.html</loc>
 <lastmod>2016-06-13T20:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/syslogd.html</loc>
+<loc>http://zhoudshu.github.io/tags/syslogd.html</loc>
 <lastmod>2016-06-13T20:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/tomcat.html</loc>
+<loc>http://zhoudshu.github.io/tags/tomcat.html</loc>
 <lastmod>2017-04-06T21:45:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/bind.html</loc>
+<loc>http://zhoudshu.github.io/tags/bind.html</loc>
 <lastmod>2017-05-24T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/messages.html</loc>
+<loc>http://zhoudshu.github.io/tags/messages.html</loc>
 <lastmod>2016-06-13T20:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/website.html</loc>
+<loc>http://zhoudshu.github.io/tags/website.html</loc>
 <lastmod>2016-05-19T11:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/barnraising.html</loc>
+<loc>http://zhoudshu.github.io/tags/barnraising.html</loc>
 <lastmod>2016-06-13T22:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/gzip.html</loc>
+<loc>http://zhoudshu.github.io/tags/gzip.html</loc>
 <lastmod>2016-12-27T18:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/security.html</loc>
+<loc>http://zhoudshu.github.io/tags/security.html</loc>
 <lastmod>2017-04-06T21:45:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/tags/impala.html</loc>
+<loc>http://zhoudshu.github.io/tags/impala.html</loc>
 <lastmod>2017-02-23T21:55:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://zhouds.cn/author/zhoudshu.html</loc>
+<loc>http://zhoudshu.github.io/author/zhoudshu.html</loc>
 <lastmod>2017-06-19T21:15:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
